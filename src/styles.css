@@ -1,129 +1,150 @@
-body{
-    background-color: black;
+body {
+  background-color: black;
 }
-.title{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
+.title {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
 }
-header{
-    color:mediumvioletred;
-    font-family: 'DM Serif Display', serif;
-    font-size: 20px;
+h2{
+  color: mediumvioletred;
+  font-family: "DM Serif Display", serif;
+  font-size: 20px;
+  margin: 0px;
 }
-a{
-    font-family: 'DM Serif Display', serif;
-    color: white;
-    padding: 10px;
-    text-decoration: none;
+a {
+  font-family: "DM Serif Display", serif;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
 }
-a:hover, .linkedin-icon:hover{
-    color:mediumvioletred;
+a:hover,
+.linkedin-icon:hover {
+  color: mediumvioletred;
 }
-li{
-    color: white;
-    list-style-type:none;
+li {
+  color: white;
+  list-style-type: none;
 }
-.menu-list{
-    margin-top:2px
-}
-
-.linkedin-icon, .github-icon{
-    height:25px;
-    width:25px;
-    background-color: white;
-}
-.linkedin-icon:hover, .github-icon:hover{
-    border: 2px solid mediumvioletred;
+.menu-list {
+  margin-top: 2px;
 }
 
-section{
-    color: white;
-    height: 40px;
-    width: 20px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
+.linkedin-icon,
+.github-icon {
+  height: 25px;
+  width: 25px;
+  background-color: white;
+}
+.linkedin-icon:hover,
+.github-icon:hover {
+  border: 2px solid mediumvioletred;
+}
 
+.content nav {
+  color: white;
+  height: 40px;
+  width: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
 }
-.contacts>p{
-    border: 2px solid white;
-    width: fit-content;
-    padding: 2px;
-    text-align: center;
+.contacts > p {
+  border: 2px solid white;
+  width: fit-content;
+  padding: 2px;
+  text-align: center;
 }
-.contacts>p:hover{
-    color:mediumvioletred;
+.contacts > p:hover {
+  color: mediumvioletred;
 }
-.home{
-    color:white;
-    text-align: center;
-    font-family: 'Anton', sans-serif;
-    font-size: 50px;
+.home {
+  color: white;
+  text-align: center;
+  font-family: "Anton", sans-serif;
+  font-size: 50px;
 }
-.home:hover{
-    color: mediumvioletred;
+.home:hover {
+  color: mediumvioletred;
 }
-.bio-section{
-    font-size: 20px;
-    padding: 60px;
+.bio-section {
+  font-size: 20px;
+  padding: 60px;
 }
-.ryan{
-    height: 400px;
-    width:600px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.bio-image {
+  height: 400px;
+  width: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
-.bio-section p{
-    color: white;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: 'DM Serif Display', serif;
-    font-size: 20px;
-    height: 550px;
-    width:765px;
+.bio-section p {
+  color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "DM Serif Display", serif;
+  font-size: 20px;
+  width: 765px;
 }
-.work-section, .projects-section{
-    height: 400px;
-    width:900px;
-    color: white;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: 'Anton', sans-serif;
-    font-size: 25px;
+.edu-section ul,.exp-section ul,.skills-section ul{
+    padding-left: 0px;
 }
-.work-section{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 60px;
+.edu-section, .exp-section, .skills-section{
+    border-bottom: 1px dotted mediumvioletred;
 }
-.work-section li{
-font-size: 15px;
+.work-section,
+.projects-section {
+  height: 400px;
+  width: 900px;
+  color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Anton", sans-serif;
+  font-size: 25px;
 }
-.p1-section{
-text-align: center;
-padding: 30px;
+.work-section {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
 }
-.edu-section p, .exp-section p, .skills-section p {
-    text-align: center;
-    border: 1px dotted mediumvioletred;
+.work-section li {
+  font-size: 15px;
 }
-.edu-section li, .exp-section li, .skills-section li{
-    font-family: 'DM Serif Display', serif;
-    /* text-align: center; */
+.p1-section {
+  text-align: center;
+  padding: 30px;
 }
-.projects-page{
-    border: 1px dotted mediumvioletred;
+.edu-section .edu-title,
+.exp-section .exp-title,
+.skills-section .skills-title {
+  text-align: center;
+  border: 1px dotted mediumvioletred;
 }
-.p1-info-section{
-    text-align: left;
+.edu-section li,
+.exp-section li,
+.skills-section li {
+  font-family: "DM Serif Display", serif;
 }
-.p1-info-section>h5, h6{
-    font-family: 'DM Serif Display', serif;
+.projects-page {
+  border: 1px dotted mediumvioletred;
 }
-.p1-info-section>h5{
-    border-bottom: 1px solid mediumvioletred;
+.p1-info-section {
+  text-align: left;
+}
+.p1-info-section > h5,
+h6 {
+  font-family: "DM Serif Display", serif;
+}
+.p1-info-section > h5 {
+  border-bottom: 1px solid mediumvioletred;
+}
+footer {
+  color: mediumvioletred;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
