@@ -1,7 +1,7 @@
 body {
   background-color: black;
 }
-.title {
+.header-title {
   display: flex;
   justify-content: space-between;
   padding: 20px;
@@ -22,14 +22,14 @@ a:hover,
 .linkedin-icon:hover {
   color: mediumvioletred;
 }
-li {
+.contacts nav {
   color: white;
-  list-style-type: none;
+  height: 40px;
+  width: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
 }
-.menu-list {
-  margin-top: 2px;
-}
-
 .linkedin-icon,
 .github-icon {
   height: 25px;
@@ -40,106 +40,6 @@ li {
 .github-icon:hover {
   border: 2px solid mediumvioletred;
 }
-
-.content nav {
-  color: white;
-  height: 40px;
-  width: 20px;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-}
-.contacts > p {
-  border: 2px solid white;
-  width: fit-content;
-  padding: 2px;
-  text-align: center;
-}
-.contacts > p:hover {
-  color: mediumvioletred;
-}
-.home {
-  color: white;
-  text-align: center;
-  font-family: "Anton", sans-serif;
-  font-size: 50px;
-}
-.home:hover {
-  color: mediumvioletred;
-}
-.bio-section {
-  font-size: 20px;
-  padding: 60px;
-}
-.bio-image {
-  height: 400px;
-  width: 600px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.bio-section p {
-  color: white;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: "DM Serif Display", serif;
-  font-size: 20px;
-  width: 765px;
-}
-.edu-section ul,.exp-section ul,.skills-section ul{
-    padding-left: 0px;
-}
-.edu-section, .exp-section, .skills-section{
-    border-bottom: 1px dotted mediumvioletred;
-}
-.work-section,
-.projects-section {
-  height: 400px;
-  width: 900px;
-  color: white;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: "Anton", sans-serif;
-  font-size: 25px;
-}
-.work-section {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 60px;
-}
-.work-section li {
-  font-size: 15px;
-}
-.p1-section {
-  text-align: center;
-  padding: 30px;
-}
-.edu-section .edu-title,
-.exp-section .exp-title,
-.skills-section .skills-title {
-  text-align: center;
-  border: 1px dotted mediumvioletred;
-}
-.edu-section li,
-.exp-section li,
-.skills-section li {
-  font-family: "DM Serif Display", serif;
-}
-.projects-page {
-  border: 1px dotted mediumvioletred;
-}
-.p1-info-section {
-  text-align: left;
-}
-.p1-info-section > h5,
-h6 {
-  font-family: "DM Serif Display", serif;
-}
-.p1-info-section > h5 {
-  border-bottom: 1px solid mediumvioletred;
-}
 footer {
   color: mediumvioletred;
   padding: 20px;
@@ -148,3 +48,85 @@ footer {
   bottom: 0;
   width: 100%;
 }
+li {
+  color: white;
+  list-style-type: none;
+}
+.home-page{
+  color: white;
+  text-align: center;
+  font-family: "Anton", sans-serif;
+  font-size: 50px;
+}
+.home-page:hover {
+  color: mediumvioletred;
+}
+.bio-page {
+  font-size: 20px;
+}
+.bio-page-image {
+  height: 400px;
+  width: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bio-page p {
+  color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "DM Serif Display", serif;
+  font-size: 20px;
+  width: 765px;
+}
+.work-page {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px;
+}
+.edu-section, .exp-section, .skills-section{
+  border-bottom: 1px dotted mediumvioletred;
+}
+.edu-title,.exp-title,.skills-title{
+  font-family: "Anton", sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  border: 1px dotted mediumvioletred;
+}
+.edu-list,.exp-list,.skills-list{
+  font-family: "DM Serif Display", serif;
+  font-size: 15px;
+  color: white;
+}
+.edu-section ul,.exp-section ul,.skills-section ul{
+    padding-left: 0px;
+}
+.projects-page {
+  height: 400px;
+  width: 900px;
+  color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Anton", sans-serif;
+  font-size: 25px;
+  text-align: center;
+  padding: 30px;
+}
+.projects-page-title {
+  border: 1px dotted mediumvioletred;
+}
+.projects-page-info {
+  text-align: left;
+}
+.projects-page-info h5,h6{
+  font-family: "DM Serif Display", serif;
+}
+.project1-title, .project2-title, .project3-title {
+  font-family: "DM Serif Display", serif;
+  border-bottom: 1px solid mediumvioletred;
+}
+
+
