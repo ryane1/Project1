@@ -1,26 +1,20 @@
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    const response = JSON.parse(xhttp.responseText);
+    var bio = response.bio;
+    var bio2 = response.bio2;
+    var output = "";
+    for(var i = 0; i < bio.length; i++){
+      output += bio[i];
+    }
+    for(var j = 0;j < bio2.length; j++){
+      output += bio2[j];
+    }
+     document.getElementById("bio").innerHTML = output;
+  }
+};
 
-const bioJSON =
-{
-    "bio": [
-        "Ryan Edgar is a Digital Business Integration Associate within Accenture ",
-        "Digital for Front-End Development North America.",
-        " She recently transitioned from a career in marketing and advertising into the tech industry.",
-        " Ryan joined Accenture’s Detroit Digital Delivery Center (DDDC) after completing the Front-End Development bootcamp at Grand Circus Detroit."
-    ],
-    "bio2": [
-        "Ryan is focused on developing technical experiences through responsive applications.",
-        "She is excited to bring forth the best practices in both web technologies and emerging trends in order to deliver creative innovations for clients within the digital space."
-    ]
-}
-
-
-const bio = document.getElementById('bio');
-bio.innerHTML = [
-    bioJSON.bio[0] +
-    bioJSON.bio[1] +
-    bioJSON.bio[2] +
-    bioJSON.bio[3]]
-    + "<p/>" +
-    bioJSON.bio2[0] +
-    bioJSON.bio2[1];
+xhttp.open("GET", "bio.json", true);
+xhttp.send();
 

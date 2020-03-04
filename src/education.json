@@ -1,0 +1,14 @@
+{
+    "education": [
+        {
+            "degree": "Certification / Front-End Development",
+            "school": "Grand Circus / Detroit",
+            "date": "3/2019 - 5/2019"
+        },
+        {
+            "degree": "Bachelors / Advertising",
+            "school": "Michigan State University / East Lansing",
+            "date": "9/2011 - 12/2015"
+        }
+    ]
+}
