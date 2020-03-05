@@ -1,29 +1,91 @@
 body {
   background-color: #000000;
 }
+header h2,
+a:hover,
+.linkedin-icon:hover,
+.linkedin-icon:hover,
+.github-icon:hover,
+footer,
+.home-page:hover,
+.edu-section,
+.exp-section,
+.skills-section {
+  color: #c71585;
+}
+.edu-title,
+.exp-title,
+.skills-title,
+.projects-page-title {
+  border: 1px dotted #c71585;
+}
+a,
+.contacts nav,
+.github-icon,
+li,
+.home-page,
+.bio-page p,
+.edu-title,
+.exp-title,
+.skills-title,
+.edu-list,
+.exp-list,
+.skills-list,
+.projects-page {
+  color: #ffffff;
+}
+h2,
+a,
+.bio-page p,
+.projects-page-info h5,
+h6,
+.edu-list,
+.exp-list,
+.skills-list {
+  font-family: "DM Serif Display", serif;
+}
+.home-page,
+.edu-title,
+.exp-title,
+.skills-title,
+.projects-page {
+  font-family: "Anton", sans-serif;
+}
+.bio-page-image,
+.bio-page p,
+.projects-page {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header-title,
+footer {
+  padding: 20px;
+}
+.bio-page,
+.bio-page p {
+  font-size: 20px;
+}
+.edu-title,
+.exp-title,
+.skills-title,
+.projects-page {
+  text-align: center;
+  font-size: 25px;
+}
 .header-title {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
 }
 h2 {
-  color: #c71585;
-  font-family: "DM Serif Display", serif;
   font-size: 20px;
   margin: 0px;
 }
 a {
-  font-family: "DM Serif Display", serif;
-  color: #ffffff;
   padding: 10px;
   text-decoration: none;
 }
-a:hover,
-.linkedin-icon:hover {
-  color: #c71585;
-}
 .contacts nav {
-  color: #ffffff;
   height: 40px;
   width: 20px;
   padding: 10px;
@@ -38,46 +100,26 @@ a:hover,
 }
 .linkedin-icon:hover,
 .github-icon:hover {
-  border: 2px solid #c71585;
+  border: 2px solid;
 }
 footer {
-  color: #c71585;
-  padding: 20px;
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
 }
 li {
-  color: #ffffff;
   list-style-type: none;
 }
 .home-page {
-  color: #ffffff;
   text-align: center;
-  font-family: "Anton", sans-serif;
   font-size: 50px;
-}
-.home-page:hover {
-  color: #c71585;
-}
-.bio-page {
-  font-size: 20px;
 }
 .bio-page-image {
   height: 400px;
   width: 600px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 .bio-page p {
-  color: #ffffff;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: "DM Serif Display", serif;
-  font-size: 20px;
   width: 765px;
 }
 .work-page {
@@ -88,23 +130,12 @@ li {
 .edu-section,
 .exp-section,
 .skills-section {
-  border-bottom: 1px dotted #c71585;
-}
-.edu-title,
-.exp-title,
-.skills-title {
-  font-family: "Anton", sans-serif;
-  color: #ffffff;
-  text-align: center;
-  font-size: 25px;
-  border: 1px dotted #c71585;
+  border-bottom: 1px dotted;
 }
 .edu-list,
 .exp-list,
 .skills-list {
-  font-family: "DM Serif Display", serif;
   font-size: 16px;
-  color: #ffffff;
 }
 .edu-section ul,
 .exp-section ul,
@@ -114,28 +145,13 @@ li {
 .projects-page {
   height: 400px;
   width: 900px;
-  color: #ffffff;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: "Anton", sans-serif;
-  font-size: 25px;
-  text-align: center;
   padding: 30px;
-}
-.projects-page-title {
-  border: 1px dotted #c71585;
 }
 .projects-page-info {
   text-align: left;
 }
-.projects-page-info h5,
-h6 {
-  font-family: "DM Serif Display", serif;
-}
 .project1-title,
 .project2-title,
 .project3-title {
-  font-family: "DM Serif Display", serif;
   border-bottom: 1px solid #c71585;
 }
