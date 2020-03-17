@@ -4,11 +4,11 @@ function processData(response) {
     let output = "";
     for(var i = 0; i < bio.length; i++){
       output += bio[i];
-    }
+    } 
     for(let j = 0;j < bio2.length; j++){
       output += bio2[j];
     }
-     document.getElementById("bio").innerHTML = output;
+    document.getElementById("bio").innerHTML = output;
   }
 
 

@@ -2,6 +2,22 @@
 body {
   background-color: #000000;
 }
+/* .header-nav:active{
+  animation: transitionIn 3.00s
+} */
+/* .page-transitions .bio-page{
+ animation: transitionIn 3.00s
+}*/
+/* @keyframes transitionIn {
+  from{
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+  to{
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}  */
 header h2,
 a:hover,
 .linkedin-icon:hover,
@@ -53,13 +69,12 @@ h6,
   font-family: "Anton", sans-serif;
 }
 .bio-page-image,
-.bio-page p{
+.bio-page p {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-.header-title,
-footer {
+.header-title {
   padding: 20px;
 }
 .bio-page,
@@ -86,7 +101,6 @@ a {
   text-decoration: none;
 }
 .contacts nav {
-  height: 40px;
   width: 20px;
   padding: 10px;
   display: flex;
@@ -102,39 +116,43 @@ a {
 .github-icon:hover {
   border: 2px solid;
 }
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-}
+
 li {
   list-style-type: none;
+}
+.page-transitions {
+  width: 100%;
+  height: 100vh;
+}
+#home-page,
+#bio-page,
+#work-page,
+#projects-page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#home-page {
+  padding: 10% 0;
+}
+#bio-page {
+  padding: 20% 0;
 }
 .home-page {
   text-align: center;
   font-size: 50px;
 }
-.bio-page {
-  padding: 60px;
+.myBio {
+  padding: 40px;
 }
 .bio-page-image {
   height: 400px;
   width: 600px;
   border: 8px double #c71585;
 }
-.bio-page p {
-  width: 610px;
-}
 .work-page {
   display: flex;
   justify-content: space-evenly;
-  padding: 60px;
-}
-.edu-section,
-.exp-section,
-.skills-section {
-  border-bottom: 1px dotted;
 }
 .edu-list,
 .exp-list,
@@ -146,9 +164,7 @@ li {
 .skills-section ul {
   padding-left: 0px;
 }
-.projects-page {
-  padding: 60px;
-}
+
 .projects-page-info {
   text-align: left;
 }
@@ -156,6 +172,31 @@ li {
 .project2-title,
 .project3-title {
   border-bottom: 1px solid #c71585;
+}
+a .top-btn {
+  display: none;
+  height: 30px;
+  width: 30px;
+  background-color: #c71585;
+  padding: 5px;
+}
+.arrow {
+  height: 30px;
+  width: 30px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background-color: #c71585;
+}
+.arrow:hover {
+  color: #ffffff;
+}
+.footer-name{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 90%;
+  padding: 10px;
 }
 /* tablet styles */
 @media screen and (max-width: 768px) {
@@ -178,58 +219,27 @@ li {
   .contacts a {
     padding: 2px;
   }
-  .home-page {
-    padding: 20px;
+  #home-section {
+    padding: 40% 0;
   }
   .home-page p {
     margin-top: 0px;
   }
-  .bio-page {
-    padding: 40px;
-    height: 550px;
-  }
-  .bio-section {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+
   .bio-page-image {
     height: 300px;
-    width: 400px;
-  }
-  .image-section img, .bio-page p{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 390px;
   }
   .bio-page p {
-    overflow: scroll;
-    font-size: 18px;
-    height: 230px;
-    width: 400px;
-    
+    font-size: 20px;
   }
   .work-page {
-    display: block;
-    padding: 40px;
-    overflow: scroll;
-    height: 500px;
+    display: flex;
+    flex-direction: column;
   }
   .edu-list,
   .exp-list,
   .skills-list {
-    text-align: center;
-  }
-  .projects-page {
-    padding: 40px;
-  }
-  .projects-page-info {
-    overflow: scroll;
-    height: 500px;
-  }
-  .project1-title,
-  .project2-title,
-  .project3-title {
     text-align: center;
   }
 }
@@ -258,29 +268,20 @@ li {
   .contacts a {
     padding: 4px;
   }
-  .bio-page {
-    padding: 40px;
-  }
+
   .bio-page-image {
     border: 2px solid #c71585;
     height: 200px;
     width: 300px;
   }
-  .image-section img, .bio-page p{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
+
   .bio-page p {
     font-size: 16px;
-    width: 300px;
   }
   .work-page {
-    display: block;
-    padding: 40px;
-    overflow: scroll;
-    height: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
   }
   .edu-list,
   .exp-list,
@@ -289,11 +290,6 @@ li {
   }
   .projects-page {
     margin: 0px;
-    padding: 40px;
-  }
-  .projects-page-info {
-    overflow: scroll;
-    height: 460px;
   }
   .project1-title,
   .project2-title,

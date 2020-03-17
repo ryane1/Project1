@@ -1,11 +1,14 @@
 function processData(response) {
     const skills = response.skills;
-    let output = "";
-    document.getElementById("title3").innerHTML = "SKILLS";
+    document.getElementById("skills-title").innerHTML = "SKILLS";
     for (let i = 0; i < skills.length; i++) {
-      output += skills[i] + "<p>";
+      const myList = document.createElement('li');
+      let listArray = document.getElementById('skills-list');
+      listArray.appendChild(myList).insertAdjacentHTML(
+        'afterbegin',
+        `${skills[i]}`
+      );
     }
-    document.getElementById("list3").innerHTML = output;
   }
 
 getData("skills.json", processData);

@@ -15,10 +15,10 @@
   <header class="header-title">
     <h2>RE</h2>
     <nav class="header-nav">
-      <a href="index.html">Home</a>
-      <a href="bio.html">Bio</a>
-      <a href="work.html">Experience</a>
-      <a href="projects.html">Projects</a>
+      <a href="#home-page">Home</a>
+      <a href="#bio-page">Bio</a>
+      <a href="#work-page">Experience</a>
+      <a href="#projects-page">Projects</a>
     </nav>
   </header>
   <div class="contacts">
@@ -29,67 +29,69 @@
           class="github-icon"></a>
     </nav>
   </div>
-  <div class="home-page">
-    <p>RYAN</p>
-    <p>EDGAR</p>
-    <p>FRONT END</p>
-    <p>DEVELOPER</p>
+<div class="page-transitions">
+  <div id="home-page" class="home-page">
+    <div class="home-section">
+        <p>RYAN</p>
+        <p>EDGAR</p>
+        <p>FRONT END</p>
+        <p>DEVELOPER</p>
+    </div>
   </div>
-  <div class="bio-page">
+  <div id="bio-page" class="bio-page">
     <div class="image-section">
       <img src="./assests/re.jpg" alt="Ryan Edgar" class="bio-page-image" />
     </div>
     <div class="bio-section">
       <p id="bio" class="myBio">
     </div>
-    <div class="work-page">
+  </div>
+  <div id="work-page" class="work-page">
       <div class="edu-section">
-        <p id="title" class="edu-title"></p>
-        <ul id="list" class="edu-list">
-          <li>
-
-          </li>
+        <p id="edu-title" class="edu-title"></p>
+        <ul id="edu-list" class="edu-list">
         </ul>
       </div>
       <div class="exp-section">
-        <p id="title2" class="exp-title"></p>
-        <ul id="list2" class="exp-list">
-          <li>
-
-          </li>
+        <p id="exp-title" class="exp-title"></p>
+        <ul id="exp-list" class="exp-list">
         </ul>
       </div>
       <div class="skills-section">
-        <p id="title3" class="skills-title"></p>
-        <ul id="list3" class="skills-list"></ul>
+        <p id="skills-title" class="skills-title"></p>
+        <ul id="skills-list" class="skills-list"></ul>
+      </div>
+  </div>
+    <div id="projects-page" class="projects-page">
+      <p id="pageTitle" class="projects-page-title"></p>
+      <div class="projects-page-info">
+        <div class="project1">
+          <h5 id="project1-title" class="project1-title"></h5>
+          <h6 id="project1-info" class="project1-info"></h6>
+        </div>
+        <div class="project2">
+          <h5 id="project2-title" class="project2-title"></h5>
+          <h6 id="project2-info" class="project2-info"></h6>
+        </div>
+        <div class="project3">
+          <h5 id="project3-title" class="project3-title"></h5>
+          <h6 id="project3-info" class="project3-info"></h6>
+        </div>
       </div>
     </div>
-      <div class="projects-page">
-          <p id="pageTitle" class="projects-page-title"></p>
-          <div class="projects-page-info">
-            <div class="project1">
-              <h5 id="title" class="project1-title"></h5>
-              <h6 id="projects" class="project1-info"></h6>
-            </div>
-            <div class="project2">
-              <h5 id="title2" class="project2-title"></h5>
-              <h6 id="projects2" class="project2-info"></h6>
-            </div>
-            <div class="project3">
-              <h5 id="title3" class="project3-title"></h5>
-              <h6 id="projects3" class="project3-info"></h6>
-            </div>
-          </div>
-      </div>
-      <footer>RYAN EDGAR</footer>
-      <script type="text/javascript" src="utilities.js"></script>
-      <script type="text/javascript" src="bio.js"></script>
-      <script type="text/javascript" src="education.js"></script>
+  </div>
+  <a onclick="topFunction()" id="top-btn"><img src="./assests/arrow.png" alt="up arrow" class="arrow"></a>
+
+    <footer class="footer-name">RYAN EDGAR</footer>
+    <script type="text/javascript" src="utilities.js"></script>
+    <script type="text/javascript" src="topButton.js"></script>
+    <script type="text/javascript" src="bio.js"></script>
+    <script type="text/javascript" src="education.js"></script>
     <script type="text/javascript" src="experience.js"></script>
     <script type="text/javascript" src="skills.js"></script>
-      <script type="text/javascript" class="projects" src="project1.js"></script>
-      <script type="text/javascript" class="projects" src="project2.js"></script>
-      <script type="text/javascript" class="projects" src="project3.js"></script>
+    <script type="text/javascript" class="projects" src="project1.js"></script>
+    <script type="text/javascript" class="projects" src="project2.js"></script>
+    <script type="text/javascript" class="projects" src="project3.js"></script>
 </body>
 
 </html>
