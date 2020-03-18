@@ -21,15 +21,15 @@
 //       scrollTop: $(window).scrollTop() + 2914
 //     });
 //   },9000);
-function pageOffset(event) {
-    event.preventDefault();
-    const targetId = event.currentTarget.getAttribute("href");
-    window.scrollTo({
-        top:targetId==="#" ? 0 : document.querySelector(targetId).offsetTop,
-        behavior: 'smooth'
-    }); // horizontal and vertical scroll increments
-     //scrolldelay = setTimeout('pageOffset()'); // scrolls every 100 milliseconds
-}
+// function pageOffset(event) {
+//     event.preventDefault();
+//     const targetId = event.currentTarget.getAttribute("href");
+//     window.scrollTo({
+//         top:targetId==="#" ? 0 : document.querySelector(targetId).offsetTop,
+//         behavior: 'smooth'
+//     }); // horizontal and vertical scroll increments
+//      //scrolldelay = setTimeout('pageOffset()'); // scrolls every 100 milliseconds
+// }
 
 /* To actually start scrolling down */
 
