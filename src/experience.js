@@ -1,15 +1,15 @@
 function processData(response) {
-  const experience = response.experience;
   document.getElementById("exp-title").innerHTML = "EXPERIENCE";
-  for (let i = 0; i < experience.length; i++) {
-    const myList = document.createElement("li");
+  for (let i = 0; i < response.length; i++) {
+    const wrapList = document.createElement("li");
     let listArray = document.getElementById("exp-list");
-    listArray.appendChild(myList).insertAdjacentHTML(
-      "afterbegin",
-      `${experience[i].title} <br>
-        ${experience[i].company} <br>
-        ${experience[i].date} <p>`
-    );
+    listArray.appendChild(wrapList).innerHTML +=
+      response[i].title +
+      "<br>" +
+      response[i].company +
+      "<br>" +
+      response[i].date +
+      "<br> <br>";
   }
 }
 

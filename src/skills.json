@@ -1,12 +1,14 @@
-{
-    "skills": [
-        "HTML",
-        "CSS",
-        "TypeScript",
-        "Angular",
-        "NodeJS",
-        "React",
-        "Design Thinking",
-        "Agile Methodologies"
-    ]
-}
+[
+    {
+        "skills": [
+            "HTML",
+            "CSS",
+            "TypeScript",
+            "Angular",
+            "NodeJS",
+            "React",
+            "Design Thinking",
+            "Agile Methodologies"
+        ]
+    }
+]
