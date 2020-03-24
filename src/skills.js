@@ -1,12 +1,24 @@
+//ul tag
+let listTag = document.createElement("ul");
+listTag.id = "skills-list";
+listTag.className = "skills-list";
+
+//append ul tag to div
+let div = document.getElementById("skills-section");
+div.appendChild(listTag).innerHTML;
+
+//li tag
+let wrapList = document.createElement("li");
+wrapList.id = "skills-item";
+listTag.appendChild(wrapList);
+
 function processData(response) {
-    const skills = response.skills;
-    let output = "";
-    document.getElementById("title3").innerHTML = "SKILLS";
-    for (let i = 0; i < skills.length; i++) {
-      output += skills[i] + "<p>";
-    }
-    document.getElementById("list3").innerHTML = output;
+  document.getElementById("skills-title").innerHTML = "SKILLS";
+  let listArray = document.getElementById("skills-item");
+
+  for (let i = 0; i < response.length; i++) {
+    listArray.innerHTML += response[i].skills.join('</li> <li>');
   }
+}
 
 getData("skills.json", processData);
-

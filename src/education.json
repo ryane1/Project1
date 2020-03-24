@@ -1,5 +1,4 @@
-{
-    "education": [
+[
         {
             "degree": "Certification / Front-End Development",
             "school": "Grand Circus / Detroit",
@@ -10,5 +9,4 @@
             "school": "Michigan State University / East Lansing",
             "date": "9/2011 - 12/2015"
         }
-    ]
-}
+]
