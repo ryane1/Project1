@@ -21,15 +21,15 @@ project2Div.appendChild(project2Tag).innerHTML;
 let project3Div = document.getElementById("project3");
 project3Div.appendChild(project3Tag).innerHTML;
 
-//
-// function displayProjectInfo(response) {
-//   return response[i] === response[0]
-//     ? (document.getElementById("project1-info"))
-//     : response[i] === response[1]
-//     ? (document.getElementById("project2-info"))
-//     : (document.getElementById("project3-info").innerHTML)
-// }
-// console.log(display());
+function displayProjectInfo(response) {
+  return document.getElementById("project1-info").innerHTML +=
+  "<div>" +
+  response[0].location +
+  "</div>" +
+  response[0].title +
+  response[0].description;
+}
+
 
 function processData(response) {
   document.getElementById("pageTitle").innerHTML = "PROJECTS";
@@ -38,30 +38,14 @@ function processData(response) {
   document.getElementById("project3-title").innerHTML = "Innovation Hackathon";
 
   for (let i = 0; i < response.length; i++) {
-    // displayProjectInfo(response[i].location + response[i].title + response[i].description);
 
     // check to see if the response is pointing to the the correct index(project)
     if (response[i] === response[0]) {
-      document.getElementById("project1-info").innerHTML +=
-        response[i].location +
-        " <br>" +
-        response[i].title +
-        "</br>" +
-        response[i].description;
+      displayProjectInfo(response)
     } else if (response[i] === response[1]) {
-      document.getElementById("project2-info").innerHTML +=
-        response[i].location +
-        " <br>" +
-        response[i].title +
-        "</br>" +
-        response[i].description;
+      displayProjectInfo(response)
     } else {
-      document.getElementById("project3-info").innerHTML +=
-        response[i].location +
-        " <br>" +
-        response[i].title +
-        "</br>" +
-        response[i].description;
+      displayProjectInfo(response)
     }
   }
 }
